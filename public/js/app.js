@@ -14,7 +14,7 @@ weatherForm.addEventListener('submit', (e) =>{
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
-    //this is saying FETCH data from this url THEN dump it to the browser
+    //this is saying FETCH data from this url THEN dump it to the browser //removed localhost
     fetch('/weather?address=' + location).then((response) =>{
         response.json().then((data) =>{
             if(data.error){
